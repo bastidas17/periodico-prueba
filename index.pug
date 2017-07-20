@@ -1,0 +1,80 @@
+extends templats/templats.pug
+block tendencias
+	.tendencias
+		.tendencias__link
+			a(href="#").tendencias__link__cta tendencias
+		p.tendencias__title  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+		.tendencias__angle
+			a(href="#").icon-angle-l
+			a(href="#").icon-angle-r
+block main
+	.cuerpo
+		.main-contenedor
+			.main-banner
+				h2.main-banner__title Lo más reciente
+				img(src="img/bombillos1.jpg", alt="").main-banner__img
+				.main-banner__copy
+					.main-banner__content  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum impedit provident, assumenda, inventore veritatis magni!
+			.main-features
+				-var i = 6
+				-while(i--)
+					.features
+						img(src="img/Marco-Torres.jpg", alt="").features__img
+						.features__copy
+							a(href="#").feature__content Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+			.main-abaut
+				h2.main-abaut__title Abaut Us
+				.block
+					.block__contenedor
+						img(src="img/flor.jpeg", alt="")
+						.block__copy
+							a(href="#").block__content Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, veritatis!
+					.block__contenedor
+						img(src="img/flor.jpeg", alt="")
+						.block__copy
+							a(href="#").block__content Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, veritatis!
+				.block-abaut
+					-var i = 6
+					-while(i--)
+						.abaut
+							img(src="img/Marco-Torres.jpg", alt="").abaut__img
+							.abaut__copy
+								a(href="#").abaut__content Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+		.main-saibar
+			.main-saibar__contenedor
+				h3.main-saibar__title Destacado
+				img(src="img/flor.jpeg", alt="").main-saibar__img
+				.main-saibar__copy
+					.main-saibar__content  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+					.main-saibar__fecha july 2017
+				h3.main-saibar__title Destacado
+				img(src="img/flor.jpeg", alt="").main-saibar__img
+				h3.main-saibar__title Destacado
+				img(src="img/flor.jpeg", alt="").main-saibar__img
+block pais
+	.pais
+		h3.pais__title Pais
+		.pais__block
+			.pais__contenedor
+				img(src="img/flor.jpeg", alt="").pais__img
+				.pais__copy
+					a(href="#").pais__link Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+					.fecha july 2017
+			.pais__contenedor
+				img(src="img/flor.jpeg", alt="").pais__img
+				.pais__copy
+					a(href="#").pais__link Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+					.fecha july 2017
+			.pais__contenedor
+				img(src="img/flor.jpeg", alt="").pais__img
+				.pais__copy
+					a(href="#").pais__link Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+					.fecha july 2017
+block footer
+	.footer
+		p.footer__correo Contáctenos: 
+			span ingenierobastidas1994@gmail.com
+		.footer__sociales
+			a(href="#").icon-facebook
+			a(href="#").icon-gplus
+			a(href="#").icon-instagram
